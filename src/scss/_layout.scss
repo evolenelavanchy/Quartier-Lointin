@@ -19,10 +19,13 @@ header {
   height: 800px;
 }
 
-.title {
+.box-header {
   position: relative;
-  left: 600px;
-  top: 200px;
+}
+.title {
+  position: absolute;
+  left: 400px;
+  top: 100px;
   border: #263e5e solid 2px;
   padding: 100px;
   background-color: rgb(255, 255, 255);
@@ -76,22 +79,297 @@ header {
 
 /* slider item (screen) */
 .slider-track .screen {
-  width: calc(100vw - 30px);
+  // width: calc(100vw - 30px);
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 5px solid #263e5e;
 }
 
-.slider-track {
-}
 .screen-1 {
+  aspect-ratio: 2 / 1;
+}
+
+.screen-1 .rectangle-1 {
   position: relative;
-  top: 50px;
-  bottom: 50px;
-  left: 50px;
-  width: 20%;
-  height: 500px;
-  border: solid 2px red;
-  background-color: #263e5e;
+  left: 5%;
+  width: 120%;
+  bottom: 22%;
+}
+
+.screen-1 .rectangle-2 {
+  position: relative;
+  right: 5%;
+  width: 80%;
+}
+
+.screen-2 {
+  aspect-ratio: 1.5 / 1;
+}
+
+.screen-2 .rectangle-3 {
+  position: relative;
+  width: 80%;
+  left: 9%;
+}
+
+.screen-3 {
+  aspect-ratio: 1.8 / 1;
+}
+.screen-3 .rectangle-4 {
+  position: relative;
+  left: 5%;
+  bottom: 5%;
+  z-index: 2;
+}
+
+.screen-3 .rectangle-5 {
+  position: relative;
+}
+
+.screen-4 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-4 .rectangle-6 {
+  position: relative;
+}
+
+.screen-5 {
+  aspect-ratio: 1.5 / 1;
+}
+
+.screen-5 .rectangle-7 {
+  position: relative;
+  left: 3%;
+  z-index: 2;
+}
+
+.screen-5 .rectangle-8 {
+  position: relative;
+  right: 3%;
+}
+
+.screen-6 {
+  aspect-ratio: 1.5 / 1;
+}
+
+.screen-6 .rectangle-9 {
+  position: relative;
+}
+
+.screen-7 {
+  aspect-ratio: 6.1 / 1;
+}
+
+.screen-7 .rectangle-10 {
+  position: relative;
+  width: 500%;
+  left: 2%;
+}
+
+.screen-7 .rectangle-11 {
+  position: relative;
+  width: 500%;
+  left: 3%;
+}
+
+.screen-7 .rectangle-12 {
+  position: relative;
+  width: 500%;
+  bottom: 20%;
+  left: 2.5%;
+}
+
+.screen-7 .rectangle-13 {
+  position: relative;
+  width: 500%;
+  top: 20%;
+  right: 1.5%;
+  z-index: 2;
+}
+
+.screen-7 .rectangle-14 {
+  position: relative;
+  width: 500%;
+  right: 3%;
+  bottom: 5%;
+}
+
+.screen-7 .rectangle-15 {
+  position: relative;
+  width: 500%;
+  right: 1.7%;
+}
+
+.screen-7 .rectangle-16 {
+  position: relative;
+  width: 500%;
+  right: 1%;
+  bottom: 14%;
+}
+
+.screen-7 .rectangle-17 {
+  position: relative;
+  width: 500%;
+  right: 6%;
+  top: 15%;
+}
+
+.screen-7 .rectangle-18 {
+  position: relative;
+  width: 500%;
+  right: 5.3%;
+  bottom: 20%;
+}
+
+.screen-7 .rectangle-19 {
+  position: relative;
+  width: 500%;
+  right: 12%;
+  top: 20%;
+}
+
+.screen-7 .rectangle-19-1 {
+  position: relative;
+  width: 500%;
+  right: 11%;
+  bottom: 17%;
+}
+
+.screen-7 .rectangle-19-2 {
+  position: relative;
+  width: 500%;
+  top: 28%;
+  right: 17.6%;
+}
+
+.screen-7 .rectangle-20 {
+  position: relative;
+  width: 500%;
+  right: 16.5%;
+}
+
+.screen-7 .rectangle-21 {
+  position: relative;
+  width: 500%;
+  right: 17%;
+}
+
+.screen-7 .rectangle-22 {
+  position: relative;
+  width: 500%;
+  right: 16%;
+}
+
+.screen-8 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-8 .rectangle-23 {
+  position: relative;
+}
+
+.screen-9 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-9 .rectangle-24 {
+  position: relative;
+  z-index: 2;
+  left: 5%;
+}
+
+.screen-9 .rectangle-25 {
+  position: relative;
+  right: 5%;
+}
+
+.screen-10 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-10 .rectangle-26 {
+  position: relative;
+}
+
+.screen-11 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-11 .rectangle-27 {
+  position: relative;
+}
+
+.screen-12 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-12 .rectangle-28 {
+  position: relative;
+}
+
+.screen-13 {
+  aspect-ratio: 2 / 1;
+}
+.screen-13 .rectangle-29 {
+  position: relative;
+  left: 5%;
+  bottom: 10%;
+  z-index: 2;
+}
+
+.screen-13 .rectangle-30 {
+  position: relative;
+  top: 6%;
+}
+
+.screen-14 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-14 .rectangle-31 {
+  position: relative;
+}
+
+.screen-15 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-15 .rectangle-32 {
+  position: relative;
+  left: 5%;
+}
+
+.screen-15 .rectangle-33 {
+  position: relative;
+  z-index: 2;
+  top: 15%;
+  right: 5%;
+}
+
+.screen-16 {
+  aspect-ratio: 1.8 / 1;
+}
+
+.screen-16 .rectangle-34 {
+  position: relative;
+  left: 10%;
+  bottom: 12%;
+  z-index: 2;
+}
+
+.screen-16 .rectangle-35 {
+  position: relative;
+  right: 10%;
+  top: 20%;
+}
+
+.screen-17 {
+  aspect-ratio: 1.5 / 1;
+}
+
+.screen-17 .rectangle-36 {
+  position: relative;
 }
