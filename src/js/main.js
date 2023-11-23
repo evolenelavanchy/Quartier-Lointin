@@ -1,17 +1,8 @@
 import { gsap } from "gsap";
-// gsap.to(".slider-track", {
-//   scrollTrigger: {
-//     trigger: ".slider-mask",
-//     start: "top top",
-//     end: "+=300%",
-//     pin: true,
-//     scrub: true,
-//     markers: true,
-//   },
-//   x: "-75%",
-//   ease: "sine.inOut",
-// });
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 var html = document.querySelector("html");
 
 // Ciblage des boutons dans le document
@@ -51,9 +42,9 @@ tlMain.set(".slider-track", {
   x: "-47%",
 });
 
-// // Déplacement du slider de 1 écran vers la droite
+// Déplacement du slider de 1 écran vers la droite
 // tlMain.to(".slider-track", {
-//   x: "-66.6666%",
+//   x: "-84%",
 //   duration: 10,
 //   ease: "power1.inOut",
 //   onComplete: () => {
@@ -64,7 +55,7 @@ tlMain.set(".slider-track", {
 //   },
 // });
 
-// tlMain.to({}, { duration: 1 });
+tlMain.to({}, { duration: 1 });
 
 // Déplacement du slider de 1 écran vers la droite
 tlMain.to(".slider-track", {
@@ -76,16 +67,16 @@ tlMain.to(".slider-track", {
 // Retour du slider totalement à gauche
 tlMain.to(".slider-track", {
   x: "0%",
-  duration: 5,
+  duration: 3,
   ease: "power1.inOut",
 });
 
-tlMain.to({}, { duration: 1 });
+tlMain.to({}, { duration: 5 });
 
 // Déplacement du slider de 1 écran vers la droite
 tlMain.to(".slider-track", {
-  x: "-16.6666%",
-  duration: 3,
+  x: "-24%",
+  duration: 10,
   ease: "power1.inOut",
   onComplete: () => {
     if (lock2) {
@@ -107,9 +98,9 @@ tlMain.to(".slider-track", {
 // Fin des déplacements
 
 // Au clic sur les boutons
-button5.addEventListener("click", () => {
+button3.addEventListener("click", () => {
   html.style.overflow = "auto"; // Le scroll est débloqué
-  lock5 = false; // Le verrou 5 est désactivé
+  lock3 = false; // Le verrou 5 est désactivé
 });
 
 button1.addEventListener("click", () => {
@@ -120,4 +111,9 @@ button1.addEventListener("click", () => {
 button2.addEventListener("click", () => {
   html.style.overflow = "auto"; // Le scroll est débloqué
   lock2 = false; // Le verrou 2 est désactivé
+});
+
+button4.addEventListener("click", () => {
+  html.style.overflow = "auto"; // Le scroll est débloqué
+  lock4 = false; // Le verrou 2 est désactivé
 });
